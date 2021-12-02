@@ -1,0 +1,32 @@
+<div class="card mt-5 p-3" style="width: 36rem;">
+<div class="cart-header">
+  <h1> Login </h1>
+<%- include ('./partials/messages') %>
+</div>
+
+
+<form action="/users/login" method="POST">
+<div class="mb-3">
+<label for="email" class="form-label">Email</label>
+<input
+type="email"
+name="email"
+placeholder="Enter Email"
+class="form-control"
+/>
+</div>
+<div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input
+      type="password"
+      name="password"
+      placeholder="Enter Password"
+      class="form-control"
+    />
+  
+</div>
+<button type="submit" class="btn btn-primary btn-block">Login</button>
+   
+</form>
+<p >Don't have an account? <a href="/users/register">Create one</a></p>
+</div>

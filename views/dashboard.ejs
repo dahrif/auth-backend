@@ -1,0 +1,85 @@
+<div class="card mt-5">
+    <div class="card-header">
+        <h3 class="my-3"> Welcome <%= user.name %></h3>
+    </div>
+
+<div class="card-body">
+    
+    <!-- Button trigger modal -->
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Add User
+          </button>
+    </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add User</h5>
+        </div>
+        <div class="modal-body">
+          
+<form action="" method="">
+    <div class="mb-3">
+        <label class="form-label" for="name">Name</label>
+        <input
+          type="name"
+          name="name"
+          placeholder="Enter Name"
+          value="<%= typeof name != 'undefined' ? name : '' %>"
+          class="form-control"
+        />
+      
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter Email"
+          value="<%= typeof email != 'undefined' ? email : '' %>"
+          class="form-control"
+        />
+      </div>
+      <div  class="mb-3">
+        <label class="form-label" for="password">Password</label>
+        <input
+          type="text"
+          name="password"
+          placeholder="Create Password"
+          value="<%= typeof password != 'undefined' ? password : '' %>"
+          class="form-control"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" data-bs-dismiss="modal">
+        Add User
+      </button>
+    </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+    </tbody>
+  </table>
+
+<a class="btn btn-danger" href="users/logout">logout</a>
+</div>
+</div>
