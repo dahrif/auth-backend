@@ -42,7 +42,7 @@ else{
     User.findOne({email : email}).exec((err,user)=>{
         console.log(user);   
         if(user) {
-            errors.push({msg: 'email already registered'});
+            errors.push({msg: 'email already exist'});
             render(res,errors,username,email,password,password2);
             
            } else {
