@@ -1,4 +1,5 @@
 const UsersModel = require('../models/user');
+
 // return all users/ return a single user
 module.exports.find = (req, res) => {
 
