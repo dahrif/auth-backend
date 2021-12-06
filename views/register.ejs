@@ -6,12 +6,12 @@
 
 <form action="/users/register" method="POST">
 <div class="mb-3">
-    <label class="form-label" for="name">Name</label>
+    <label class="form-label" for="name">Userame</label>
     <input
-      type="name"
-      name="name"
+      type="text"
+      name="username"
       placeholder="Enter Name"
-      value="<%= typeof name != 'undefined' ? name : '' %>"
+      value="<%= typeof username != 'undefined' ? username : '' %>"
       class="form-control"
     />
   
