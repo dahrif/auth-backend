@@ -1,7 +1,7 @@
 <% for(var i = 0; i < user.length; i++) { %>
     <tr>
         <td><%= i + 1 %></td>
-        <td><%= user[i].username %></td>
+        <td><%= user[i]["username"] %></td>
         <td><%= user[i].email %></td>
         <td><%= user[i].password %></td>
         <!-- <td>

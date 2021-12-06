@@ -3,13 +3,18 @@ const router  = express.Router();
 const {ensureAuthenticated} = require("../config/auth.js");
 
 const {
+  dash,
+  addUserRoute,
+  updateUserRoute,
+} = require('../services/render');
+const {
   create,
   find,
   update,
   deleteUser
 } = require('../controller/controller');
 //login page
-router.get('/', (req,res)=>{
+router.get('/',(req,res)=>{
     res.render('welcome');
 })
 //register page

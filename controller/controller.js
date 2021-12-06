@@ -1,6 +1,6 @@
 const UsersModel = require('../models/user');
 
-// return all users/ return a single user
+// return all users/ return a single 
 module.exports.find = (req, res) => {
 
     if (req.query.id) {
