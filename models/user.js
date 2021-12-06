@@ -12,6 +12,9 @@ password :{
     type  : String,
     required : true
 } 
+},
+{
+    collection: 'users'
 });
 const User= mongoose.model('User',UserSchema);
 

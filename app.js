@@ -33,6 +33,7 @@ app.use(passport.session());
      res.locals.error  = req.flash('error');
    next();
    })
+
 //Routes
 app.use('/',require('./routes/index'));
 app.use('/users',require('./routes/users'));
